@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode roles = "*">
+    <siteMapNode title ="Home Page" roles="*">
+      <siteMapNode url="~/HomePage-User.aspx" roles ="User,Driver,Officer" title="Home Page"  description="This is the homepage for user, driver, officer" />
+      <siteMapNode url="~/Admin/HomePage.aspx" roles ="Admin" title="Edit Home Page"  description="This is the homepage for Admin" />
+    </siteMapNode>
+    
+    <siteMapNode title ="Time Table" roles ="*">
+      <siteMapNode url ="~/DriverCanSee/DriverTimetable.aspx" roles="Driver" title ="Driver Timetable" description ="Bus timetable for drivers"/>
+      <siteMapNode url="~/TimeTable.aspx" roles="User,Admin,Officer" title="Timetable"  description="Bus Time Table for everyone except Drivers" />
+      </siteMapNode>
+      
+    <siteMapNode title ="Officer Management" roles="officer">
+       <siteMapNode url="~/Officer/BusDatabase.aspx" title="Manage Bus Data" description="Add/Edit Bus data"
+              roles="Officer,Admin"/>
+       <siteMapNode url="~/Officer/BusStopDatabase.aspx" title="Manage Bus Stop Data" description="Add/Edit Bus Stop data"
+              roles="Officer"/>
+       <siteMapNode url="~/Officer/RouteDatabase.aspx" title="Manage Route Data" description="Add/Edit Route data"
+              roles="Officer"/>
+      <siteMapNode url="~/Officer/DriverTime.aspx" title="Manage Driver Time" description="Add/Edit Time to Driver"
+              roles="Officer"/>
+    </siteMapNode>
+
+    <siteMapNode url="~/AboutUs.aspx" roles ="*" title="About Us"  description="Contact with our service" />
+    
+     <siteMapNode title ="Staff" roles ="Driver, Officer, Admin">
+    <siteMapNode url ="~/Employee/UserProfile.aspx" roles="Driver, Admin, Officer" title ="Profile" description ="User Profile"/>
+  </siteMapNode>
+</siteMapNode>
+
+ 
+
+</siteMap>
+
